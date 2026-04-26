@@ -158,8 +158,59 @@
 			</div>
 		</section>
 
-		<section id="analytics" aria-label="Analytics section">
-			<!-- Stage 6: Analytics content -->
+			<section id="analytics" class="analytics" aria-label="Analytics section">
+			<div class="analytics__container">
+				<div class="analytics__header">
+					<h2 class="analytics__title">Explora tus datos a fondo</h2>
+					<p class="analytics__description">
+						Convierte tus emociones en información accionable para tomar mejores decisiones cada semana.
+					</p>
+				</div>
+
+				<div class="analytics__panel">
+					<div class="analytics__panel-head">
+						<h3 class="analytics__panel-title">Mood Trends</h3>
+						<span class="analytics__period">Últimos 7 días</span>
+					</div>
+
+					<div class="analytics__chart-wrap" role="img" aria-label="Mood Trends line chart">
+						<svg class="analytics__chart" viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+							<line x1="60" y1="35" x2="60" y2="230" class="axis-line" />
+							<line x1="60" y1="230" x2="590" y2="230" class="axis-line" />
+							<line x1="60" y1="70" x2="590" y2="70" class="grid-line" />
+							<line x1="60" y1="120" x2="590" y2="120" class="grid-line" />
+							<line x1="60" y1="170" x2="590" y2="170" class="grid-line" />
+
+							<polyline
+								points="95,170 170,150 245,175 320,130 395,95 470,115 545,80"
+								class="trend-fill"
+							/>
+							<polyline
+								points="95,170 170,150 245,175 320,130 395,95 470,115 545,80"
+								class="trend-line"
+							/>
+
+							<circle cx="95" cy="170" r="5" class="trend-point" />
+							<circle cx="170" cy="150" r="5" class="trend-point" />
+							<circle cx="245" cy="175" r="5" class="trend-point" />
+							<circle cx="320" cy="130" r="5" class="trend-point" />
+							<circle cx="395" cy="95" r="5" class="trend-point" />
+							<circle cx="470" cy="115" r="5" class="trend-point" />
+							<circle cx="545" cy="80" r="5" class="trend-point" />
+						</svg>
+
+						<div class="analytics__labels">
+							<span>Lun</span>
+							<span>Mar</span>
+							<span>Mié</span>
+							<span>Jue</span>
+							<span>Vie</span>
+							<span>Sáb</span>
+							<span>Dom</span>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<section id="cta" aria-label="Call to action section">
