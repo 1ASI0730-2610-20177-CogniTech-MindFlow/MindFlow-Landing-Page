@@ -466,3 +466,123 @@ nav {
 }
 
 
+.analytics {
+	background-color: var(--white);
+	padding: 5rem 1.5rem;
+}
+
+.analytics__container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.analytics__header {
+	text-align: center;
+	max-width: 700px;
+	margin: 0 auto 2.5rem;
+}
+
+.analytics__title {
+	font-size: 2.4rem;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	line-height: 1.2;
+	color: var(--dark-text);
+	margin-bottom: 0.75rem;
+}
+
+.analytics__description {
+	font-size: 1rem;
+	line-height: 1.7;
+	color: var(--gray-text);
+}
+
+.analytics__panel {
+	background-color: #f9fbff;
+	border: 1px solid var(--borders);
+	border-radius: 1rem;
+	padding: 1.5rem;
+	box-shadow: 0 14px 30px rgba(31, 41, 55, 0.06);
+}
+
+.analytics__panel-head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+.analytics__panel-title {
+	font-size: 1.15rem;
+	font-weight: 700;
+	color: var(--dark-text);
+}
+
+.analytics__period {
+	font-size: 0.85rem;
+	font-weight: 600;
+	color: var(--primary-blue);
+	background-color: rgba(79, 141, 245, 0.12);
+	padding: 0.35rem 0.65rem;
+	border-radius: 999px;
+}
+
+.analytics__chart-wrap {
+	background-color: var(--white);
+	border: 1px solid var(--borders);
+	border-radius: 0.85rem;
+	padding: 1rem;
+}
+
+.analytics__chart {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.axis-line {
+	stroke: #9ca3af;
+	stroke-width: 1.4;
+}
+
+.grid-line {
+	stroke: #e5e7eb;
+	stroke-width: 1;
+	stroke-dasharray: 3 4;
+}
+
+.trend-line {
+	fill: none;
+	stroke: var(--primary-blue);
+	stroke-width: 4;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.trend-fill {
+	fill: none;
+	stroke: rgba(110, 211, 163, 0.35);
+	stroke-width: 9;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.trend-point {
+	fill: var(--white);
+	stroke: var(--primary-blue);
+	stroke-width: 3;
+}
+
+.analytics__labels {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 0.25rem;
+	padding: 0.25rem 0.35rem 0;
+	font-size: 0.85rem;
+	font-weight: 600;
+	color: var(--gray-text);
+	text-align: center;
+}
+
+
