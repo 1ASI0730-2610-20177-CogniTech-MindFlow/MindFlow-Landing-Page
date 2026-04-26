@@ -709,3 +709,172 @@ nav {
 }
 
 
+
+@media (max-width: 1100px) {
+	.navbar {
+		gap: 1rem;
+	}
+
+	.navbar__menu {
+		gap: 1.2rem;
+	}
+
+	.hero__heading {
+		font-size: 2.6rem;
+	}
+
+	.features__grid {
+		grid-template-columns: repeat(2, minmax(260px, 1fr));
+	}
+
+	.footer__container {
+		grid-template-columns: 1fr;
+		gap: 2.2rem;
+	}
+
+	.footer__description {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 900px) {
+	.navbar {
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 1rem;
+	}
+
+	.navbar__logo {
+		width: 100%;
+		text-align: center;
+	}
+
+	.navbar__menu,
+	.navbar__actions {
+		justify-content: center;
+	}
+
+	.hero {
+		min-height: auto;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
+
+	.hero__container,
+	.journey__container {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+
+	.hero__content,
+	.journey__content,
+	.analytics__header {
+		text-align: center;
+	}
+
+	.hero__badge,
+	.hero__description {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.hero__actions {
+		justify-content: center;
+	}
+
+	.hero__card {
+		top: 0;
+		animation: none;
+	}
+
+	.features__title,
+	.analytics__title,
+	.cta__title {
+		font-size: 2rem;
+	}
+
+	.features__grid {
+		grid-template-columns: 1fr;
+	}
+
+	.journey__cards {
+		margin-top: 0.5rem;
+	}
+
+	.analytics__panel-head {
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.footer__columns {
+		grid-template-columns: repeat(2, minmax(140px, 1fr));
+	}
+}
+
+@media (max-width: 640px) {
+	.navbar__menu {
+		gap: 0.8rem;
+		flex-wrap: wrap;
+	}
+
+	.navbar__menu a,
+	.navbar__login,
+	.btn-signup {
+		font-size: 0.9rem;
+	}
+
+	.hero__heading {
+		font-size: 2rem;
+	}
+
+	.hero__description,
+	.journey__description,
+	.analytics__description,
+	.cta__text {
+		font-size: 0.95rem;
+	}
+
+	.hero__actions {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.btn-primary,
+	.btn-secondary {
+		width: 100%;
+	}
+
+	.feature-card,
+	.journey-card,
+	.analytics__panel,
+	.cta__box {
+		padding: 1.25rem;
+	}
+
+	.journey-card {
+		gap: 1rem;
+	}
+
+	.analytics__chart-wrap {
+		padding: 0.65rem;
+	}
+
+	.analytics__labels {
+		font-size: 0.74rem;
+	}
+
+	.cta__title {
+		font-size: 1.75rem;
+	}
+
+	.footer__columns {
+		grid-template-columns: 1fr;
+		gap: 1.5rem;
+	}
+
+	.site-footer {
+		padding-top: 3rem;
+	}
+}
+
