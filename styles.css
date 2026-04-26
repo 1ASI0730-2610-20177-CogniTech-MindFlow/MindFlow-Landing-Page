@@ -1,0 +1,49 @@
+:root {
+	--primary-blue: #4f8df5;
+	--soft-green: #6ed3a3;
+	--background: #f8fafc;
+	--white: #ffffff;
+	--dark-text: #1f2937;
+	--gray-text: #6b7280;
+	--borders: #e5e7eb;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	width: 100%;
+}
+
+body {
+	font-family: "Inter", Arial, sans-serif;
+	background-color: var(--background);
+	color: var(--dark-text);
+	line-height: 1.5;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+button {
+	font: inherit;
+}
+
+main,
+header,
+footer,
+section,
+nav {
+	width: 100%;
+}
