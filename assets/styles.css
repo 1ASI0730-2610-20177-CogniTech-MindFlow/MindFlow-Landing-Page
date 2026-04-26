@@ -64,12 +64,23 @@ nav {
 }
 
 .navbar__logo {
-	font-size: 1.3rem;
-	font-weight: 800;
-	letter-spacing: -0.02em;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.55rem;
 	color: var(--dark-text);
 }
 
+.logo-image {
+	height: 34px;
+	width: auto;
+	object-fit: contain;
+}
+
+.logo-text {
+	font-size: 1.3rem;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+}
 .navbar__menu {
 	list-style: none;
 	display: flex;
@@ -265,6 +276,9 @@ nav {
 	font-size: 0.9rem;
 	font-weight: 600;
 	color: var(--primary-blue);
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35rem;
 }
 
 .hero__card-text {
@@ -338,11 +352,26 @@ nav {
 }
 
 .feature-card__icon {
-	font-size: 2.5rem;
+	width: 46px;
+	height: 46px;
 	margin-bottom: 1rem;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
+	color: var(--primary-blue);
+	background-color: rgba(79, 141, 245, 0.08);
+	border-radius: 0.75rem;
+}
+
+.icon {
+	width: 26px;
+	height: 26px;
+	flex-shrink: 0;
+}
+
+.icon--sm {
+	width: 18px;
+	height: 18px;
 }
 
 .feature-card__title {
@@ -661,9 +690,9 @@ nav {
 }
 
 .footer__logo {
-	font-size: 1.4rem;
-	font-weight: 800;
-	letter-spacing: -0.02em;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.55rem;
 	color: var(--dark-text);
 }
 
@@ -746,7 +775,11 @@ nav {
 
 	.navbar__logo {
 		width: 100%;
-		text-align: center;
+		justify-content: center;
+	}
+
+	.logo-image {
+		height: 30px;
 	}
 
 	.navbar__menu,
