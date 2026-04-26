@@ -585,4 +585,59 @@ nav {
 	text-align: center;
 }
 
+.cta {
+	padding: 5rem 1.5rem;
+	background-color: var(--background);
+}
+
+.cta__container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.cta__box {
+	background: linear-gradient(135deg, #4f8df5 0%, #3c78df 100%);
+	border-radius: 1.25rem;
+	padding: 3.25rem 2rem;
+	text-align: center;
+	box-shadow: 0 18px 36px rgba(79, 141, 245, 0.3);
+}
+
+.cta__title {
+	font-size: 2.35rem;
+	line-height: 1.2;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	color: var(--white);
+	margin-bottom: 0.9rem;
+}
+
+.cta__text {
+	font-size: 1.02rem;
+	line-height: 1.7;
+	color: rgba(255, 255, 255, 0.92);
+	max-width: 620px;
+	margin: 0 auto 1.6rem;
+}
+
+.cta__button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.9rem 1.45rem;
+	border-radius: 0.75rem;
+	background-color: var(--white);
+	color: var(--primary-blue);
+	font-size: 0.96rem;
+	font-weight: 700;
+	border: 1px solid transparent;
+	transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cta__button:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 10px 18px rgba(0, 0, 0, 0.16);
+}
+
+
 
