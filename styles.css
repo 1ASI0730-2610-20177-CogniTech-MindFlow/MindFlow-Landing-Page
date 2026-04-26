@@ -703,6 +703,9 @@ nav {
 .footer__list a:hover {
 	color: var(--dark-text);
 }
-
+.navbar__menu a.is-active {
+    color: var(--primary-blue);
+    font-weight: 700;
+}
 
 
