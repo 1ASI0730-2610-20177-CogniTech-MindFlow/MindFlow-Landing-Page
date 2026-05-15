@@ -1,68 +1,99 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta
-		name="description"
-		content="MindFlow landing page - emotional wellness app for journaling and mood insights."
-	/>
-	<title>MindFlow</title>
+	<meta name="description" content="" data-i18n-attr="content:meta.description" />
+	<title data-i18n="meta.title">MindFlow</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-		rel="stylesheet"
-	/>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 	<link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
 	<header class="site-header">
 		<nav class="navbar" aria-label="Main navigation">
-			<a href="#" class="navbar__logo" aria-label="MindFlow home">
+			<a href="#hero" class="navbar__logo" aria-label="MindFlow home">
 				<img src="assets/images/MindFlow_logo.png" alt="" class="logo-image" />
 				<span class="logo-text">MindFlow</span>
 			</a>
-			<ul class="navbar__menu">
-				<li><a href="#features">Características</a></li>
-				<li><a href="#journey">Cómo funciona</a></li>
-				<li><a href="#analytics">Análisis</a></li>
-				<li><a href="#cta">Planes</a></li>
-			</ul>
 
-			<div class="navbar__actions">
-				<a href="#" class="navbar__login">Log in</a>
-				<a href="#" class="btn-signup">Sign Up</a>
+			<button type="button" class="navbar__toggle" aria-expanded="false" aria-controls="navbar-panel" aria-label="Open menu">
+				<span class="navbar__toggle-bar"></span>
+				<span class="navbar__toggle-bar"></span>
+				<span class="navbar__toggle-bar"></span>
+			</button>
+
+			<div class="navbar__panel" id="navbar-panel">
+				<ul class="navbar__menu">
+					<li><a href="#problem" data-i18n="nav.problem">Problem</a></li>
+					<li><a href="#how-it-works" data-i18n="nav.howItWorks">How it works</a></li>
+					<li><a href="#product-video" data-i18n="nav.demo">Product demo</a></li>
+					<li><a href="#why-mindflow" data-i18n="nav.whyMindFlow">Why MindFlow</a></li>
+					<li><a href="#features" data-i18n="nav.features">Features</a></li>
+					<li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
+					<li><a href="#team" data-i18n="nav.team">Team</a></li>
+				</ul>
+
+				<div class="navbar__actions">
+					<button type="button" class="lang-switch" data-lang-toggle aria-label="Switch language">
+						<span data-i18n="lang.switch">ES</span>
+					</button>
+					<a href="#" class="navbar__login" data-i18n="nav.login">Log in</a>
+					<a href="#pricing" class="btn-signup" data-i18n="nav.signup">Sign up</a>
+				</div>
 			</div>
 		</nav>
 	</header>
 
 	<main>
-		<section id="hero" class="hero" aria-label="Hero section">
-			<div class="hero__container">
+		<!-- HERO: Value proposition in 5 seconds -->
+		<section id="hero" class="hero section-block section-block--hero" aria-label="Hero section">
+			<div class="hero__blobs" aria-hidden="true">
+				<span class="hero__blob hero__blob--1"></span>
+				<span class="hero__blob hero__blob--2"></span>
+				<span class="hero__blob hero__blob--3"></span>
+			</div>
+			<div class="hero__container hero-animate">
 				<div class="hero__content">
 					<div class="hero__badge">
-						<span>Bienvenido a MindFlow</span>
+						<span data-i18n="hero.badge">For students &amp; young professionals</span>
 					</div>
 
 					<h1 class="hero__heading">
-						Comprende tus
-						<span class="hero__gradient">emociones mejor</span>.
+						<span data-i18n="hero.headingBefore">Reduce stress blind spots by up to</span>
+						<span class="hero__gradient" data-i18n="hero.headingHighlight">40%</span>
+						<span data-i18n="hero.headingAfter">with AI mood tracking</span>
 					</h1>
 
-					<p class="hero__description">
-						Rastra tu estado de ánimo, comprende patrones y descubre insights sobre ti mismo con diarios impulsados por IA.
+					<p class="hero__description" data-i18n="hero.description">
+						MindFlow turns daily journaling into actionable emotional intelligence.
 					</p>
 
+					<div class="hero__stats">
+						<div class="stat-pill">
+							<strong data-i18n="hero.stat1Value">40%</strong>
+							<span data-i18n="hero.stat1Label">faster pattern detection</span>
+						</div>
+						<div class="stat-pill">
+							<strong data-i18n="hero.stat2Value">2 min</strong>
+							<span data-i18n="hero.stat2Label">daily check-in</span>
+						</div>
+						<div class="stat-pill">
+							<strong data-i18n="hero.stat3Value">100%</strong>
+							<span data-i18n="hero.stat3Label">private data</span>
+						</div>
+					</div>
+
 					<div class="hero__actions">
-						<a href="#" class="btn-primary">Comenzar a escribir</a>
-						<a href="#" class="btn-secondary">Saber más</a>
+						<a href="#pricing" class="btn-primary" data-i18n="hero.ctaPrimary">Start free</a>
+						<a href="#how-it-works" class="btn-secondary" data-i18n="hero.ctaSecondary">See how it works</a>
 					</div>
 				</div>
 
 				<div class="hero__card">
 					<div class="hero__card-header">
-						<span class="hero__card-date">Hoy</span>
+						<span class="hero__card-date" data-i18n="hero.cardDate">Today</span>
 						<span class="hero__card-mood">
 							<svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
 								<circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2" />
@@ -70,169 +101,263 @@
 								<circle cx="15" cy="10" r="1" fill="currentColor" />
 								<path d="M8 14c1 1.4 2.2 2 4 2s3-.6 4-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
 							</svg>
-							Feliz
+							<span data-i18n="hero.cardMood">Calm</span>
 						</span>
 					</div>
-					<p class="hero__card-text">
-							¡Me siento genial hoy! Tuve una mañana productiva y disfruté algo de tiempo al aire libre.
-					</p>
+					<p class="hero__card-text" data-i18n="hero.cardText">Finished my thesis draft.</p>
 					<div class="hero__card-tags">
-						<span class="tag">Productividad</span>
-						<span class="tag">Naturaleza</span>
+						<span class="tag" data-i18n="hero.tag1">Academics</span>
+						<span class="tag" data-i18n="hero.tag2">Wellness</span>
 					</div>
 				</div>
 			</div>
 		</section>
 
-			<section id="features" class="features" aria-label="Features section">
-			<div class="features__container">
-				<div class="features__header">
-					<h2 class="features__title">Todo lo que necesitas para claridad emocional</h2>
+		<!-- PROBLEM -->
+		<section id="problem" class="problem section-block section-block--blue">
+			<div class="section-block__container">
+				<div class="section-block__header">
+					<p class="eyebrow" data-i18n="problem.eyebrow">The problem</p>
+					<h2 class="section-block__title" data-i18n="problem.title">You can't fix what you can't see</h2>
+					<p class="section-block__description" data-i18n="problem.description">Students and young professionals face chronic stress.</p>
 				</div>
+				<div class="problem__grid">
+					<article class="problem-card">
+						<div class="problem-card__icon" aria-hidden="true">01</div>
+						<h3 data-i18n="problem.item1Title">Invisible stress buildup</h3>
+						<p data-i18n="problem.item1Text">Mood swings pile up for weeks.</p>
+					</article>
+					<article class="problem-card">
+						<div class="problem-card__icon" aria-hidden="true">02</div>
+						<h3 data-i18n="problem.item2Title">Generic wellness apps</h3>
+						<p data-i18n="problem.item2Text">One-size-fits-all doesn't match your triggers.</p>
+					</article>
+					<article class="problem-card">
+						<div class="problem-card__icon" aria-hidden="true">03</div>
+						<h3 data-i18n="problem.item3Title">Hard to share with professionals</h3>
+						<p data-i18n="problem.item3Text">Therapists need structured history.</p>
+					</article>
+				</div>
+			</div>
+		</section>
 
-				<div class="features__grid">
-					<div class="feature-card">
-						<div class="feature-card__icon" aria-hidden="true">
+		<!-- HOW IT WORKS -->
+		<section id="how-it-works" class="how-it-works section-block section-block--white">
+			<div class="section-block__container">
+				<div class="section-block__header section-block__header--center">
+					<p class="eyebrow" data-i18n="howItWorks.eyebrow">How it works</p>
+					<h2 class="section-block__title" data-i18n="howItWorks.title">Three steps to emotional clarity</h2>
+					<p class="section-block__description" data-i18n="howItWorks.description">From a 2-minute daily log to insights you can act on.</p>
+				</div>
+				<div class="steps">
+					<article class="step-card">
+						<div class="step-card__visual" aria-hidden="true">
+							<span class="step-card__number">1</span>
 							<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 								<rect x="5" y="3.5" width="14" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="2" />
 								<line x1="9" y1="7" x2="15" y2="7" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
 								<line x1="9" y1="11" x2="15" y2="11" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
 							</svg>
 						</div>
-						<h3 class="feature-card__title">Diario Emocional</h3>
-						<p class="feature-card__description">Escribe libremente y captura tus sentimientos en el momento.</p>
-					</div>
-
-					<div class="feature-card">
-						<div class="feature-card__icon" aria-hidden="true">
+						<h3 data-i18n="howItWorks.step1Title">Log in 2 minutes</h3>
+						<p data-i18n="howItWorks.step1Text">Write freely or pick a mood.</p>
+					</article>
+					<div class="steps__connector" aria-hidden="true"></div>
+					<article class="step-card">
+						<div class="step-card__visual" aria-hidden="true">
+							<span class="step-card__number">2</span>
 							<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-								<path d="M10 4a3 3 0 0 0-5 2.2A4 4 0 0 0 6 14h4V4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
-								<path d="M14 4a3 3 0 0 1 5 2.2A4 4 0 0 1 18 14h-4V4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
-								<path d="M10 14v4a2 2 0 1 0 4 0v-4" fill="none" stroke="currentColor" stroke-width="2" />
+								<path d="M4 18v-4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v4" fill="none" stroke="currentColor" stroke-width="2" />
+								<path d="M8 10V8a4 4 0 1 1 8 0v2" fill="none" stroke="currentColor" stroke-width="2" />
+								<circle cx="12" cy="14" r="2" fill="currentColor" />
 							</svg>
 						</div>
-						<h3 class="feature-card__title">Análisis de Emociones con IA</h3>
-						<p class="feature-card__description">La IA analiza patrones en tus emociones y comportamientos.</p>
-					</div>
-
-					<div class="feature-card">
-						<div class="feature-card__icon" aria-hidden="true">
+						<h3 data-i18n="howItWorks.step2Title">AI finds patterns</h3>
+						<p data-i18n="howItWorks.step2Text">See weekly trends and triggers.</p>
+					</article>
+					<div class="steps__connector" aria-hidden="true"></div>
+					<article class="step-card">
+						<div class="step-card__visual" aria-hidden="true">
+							<span class="step-card__number">3</span>
 							<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-								<path d="M8 10l2 2a2 2 0 0 0 2.8 0L14 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-								<path d="M3 9l4-3 4 3-3 3a2 2 0 0 1-2.8 0L3 10z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
-								<path d="M21 9l-4-3-4 3 3 3a2 2 0 0 0 2.8 0l2.2-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+								<path d="M12 3v18M3 12h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+								<circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2" />
 							</svg>
 						</div>
-						<h3 class="feature-card__title">Retroalimentación Empática</h3>
-						<p class="feature-card__description">Recibe sugerencias compasivas basadas en tu contexto emocional.</p>
-					</div>
+						<h3 data-i18n="howItWorks.step3Title">Act &amp; share</h3>
+						<p data-i18n="howItWorks.step3Text">Get breathing guides and export reports.</p>
+					</article>
+				</div>
+			</div>
+		</section>
 
-					<div class="feature-card">
-						<div class="feature-card__icon" aria-hidden="true">
-							<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-								<path d="M3 12l9-9h7a2 2 0 0 1 2 2v7l-9 9L3 12z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
-								<circle cx="16.5" cy="7.5" r="1.5" fill="currentColor" />
-							</svg>
-						</div>
-						<h3 class="feature-card__title">Etiquetas Contextuales</h3>
-						<p class="feature-card__description">Categoriza automáticamente tus entradas por temas y contextos.</p>
+		<!-- PRODUCT VIDEO -->
+		<section id="product-video" class="product-video section-block section-block--violet" aria-label="Product demo video">
+			<div class="section-block__container">
+				<div class="product-video__layout">
+					<div class="product-video__copy">
+						<p class="eyebrow" data-i18n="video.eyebrow">About the product</p>
+						<h2 class="section-block__title" data-i18n="video.title">See MindFlow in action</h2>
+						<p class="section-block__description" data-i18n="video.description">A 2-minute walkthrough of MindFlow.</p>
+						<ul class="product-video__bullets">
+							<li data-i18n="video.bullet1">Daily mood logging with NLP tagging</li>
+							<li data-i18n="video.bullet2">Pattern dashboards and smart interventions</li>
+							<li data-i18n="video.bullet3">Premium PDF/CSV exports for professionals</li>
+						</ul>
+						<a href="#" class="product-video__external" data-youtube-link target="_blank" rel="noopener noreferrer" data-i18n="video.openYoutube">Watch on YouTube</a>
 					</div>
-
-					<div class="feature-card">
-						<div class="feature-card__icon" aria-hidden="true">
-							<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-								<rect x="3" y="6" width="13" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2" />
-								<path d="M16 10l5-3v10l-5-3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
-							</svg>
+					<div class="product-video__player">
+						<div class="product-video__frame">
+							<iframe
+								data-youtube-embed
+								title="MindFlow product demo"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen
+								loading="lazy"
+							></iframe>
 						</div>
-						<h3 class="feature-card__title">Adjuntos Multimedia</h3>
-						<p class="feature-card__description">Agrega fotos, videos y audio a tus entradas de diario.</p>
-					</div>
-
-					<div class="feature-card">
-						<div class="feature-card__icon" aria-hidden="true">
-							<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-								<circle cx="11" cy="11" r="6" fill="none" stroke="currentColor" stroke-width="2" />
-								<line x1="16" y1="16" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-							</svg>
-						</div>
-						<h3 class="feature-card__title">Búsqueda por Palabras Clave</h3>
-						<p class="feature-card__description">Encuentra rápidamente entradas específicas por palabras o temas.</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
-
-		<section id="journey" class="journey" aria-label="Emotional journey section">
-			<div class="journey__container">
-				<div class="journey__content">
-					<h2 class="journey__title">Tu viaje emocional</h2>
-					<p class="journey__description">
-						MindFlow te ayuda a comprender tu viaje emocional con visualizaciones intuitivas y análisis profundos. Descubre patrones, comprende disparadores y cultiva la inteligencia emocional.
-					</p>
-					<ul class="journey__list">
-						<li class="journey__list-item">Seguimiento diario de emociones y sentimientos</li>
-						<li class="journey__list-item">Análisis de patrones emocionales durante el tiempo</li>
-						<li class="journey__list-item">Recomendaciones personalizadas para bienestar</li>
-						<li class="journey__list-item">Reportes detallados sobre tu progreso emocional</li>
+		<!-- WHY MINDFLOW (differentiation) -->
+		<section id="why-mindflow" class="differentiation section-block section-block--mint">
+			<div class="section-block__container">
+				<div class="differentiation__layout">
+					<div class="section-block__header">
+						<p class="eyebrow" data-i18n="differentiation.eyebrow">Why MindFlow</p>
+						<h2 class="section-block__title" data-i18n="differentiation.title">Built for depth—not another generic diary</h2>
+						<p class="section-block__description" data-i18n="differentiation.description">What sets us apart.</p>
+					</div>
+					<ul class="diff-list">
+						<li class="diff-list__item">
+							<span class="diff-list__check" aria-hidden="true">✓</span>
+							<div>
+								<strong data-i18n="differentiation.item1Title">AI mood journal with NLP</strong>
+								<p data-i18n="differentiation.item1Text">Understands context in your entries.</p>
+							</div>
+						</li>
+						<li class="diff-list__item">
+							<span class="diff-list__check" aria-hidden="true">✓</span>
+							<div>
+								<strong data-i18n="differentiation.item2Title">Stress-adaptive habits</strong>
+								<p data-i18n="differentiation.item2Text">Goals adjust when stress rises.</p>
+							</div>
+						</li>
+						<li class="diff-list__item">
+							<span class="diff-list__check" aria-hidden="true">✓</span>
+							<div>
+								<strong data-i18n="differentiation.item3Title">Clinical-ready exports</strong>
+								<p data-i18n="differentiation.item3Text">PDF histories and raw CSV.</p>
+							</div>
+						</li>
+						<li class="diff-list__item">
+							<span class="diff-list__check" aria-hidden="true">✓</span>
+							<div>
+								<strong data-i18n="differentiation.item4Title">Smart interventions</strong>
+								<p data-i18n="differentiation.item4Text">Guides triggered by your patterns.</p>
+							</div>
+						</li>
 					</ul>
 				</div>
+			</div>
+		</section>
 
-				<div class="journey__cards">
-					<div class="journey-card">
-						<div class="journey-card__number">1</div>
-						<h3 class="journey-card__title">Refleja</h3>
-						<p class="journey-card__text">Escribe sobre tus emociones y experiencias diarias con libertad.</p>
+		<!-- FEATURES / BENEFITS -->
+		<section id="features" class="features section-block section-block--white" aria-label="Features section">
+			<div class="section-block__container">
+				<div class="section-block__header section-block__header--center">
+					<p class="eyebrow" data-i18n="features.eyebrow">Benefits</p>
+					<h2 class="section-block__title" data-i18n="features.title">Everything you need for emotional clarity</h2>
+					<p class="section-block__description" data-i18n="features.subtitle">Scan-friendly tools for busy people.</p>
+				</div>
+				<div class="features__grid">
+					<div class="feature-card">
+						<div class="feature-card__icon" aria-hidden="true">
+							<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+								<rect x="5" y="3.5" width="14" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="2" />
+								<line x1="9" y1="7" x2="15" y2="7" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+							</svg>
+						</div>
+						<h3 class="feature-card__title" data-i18n="features.f1Title">AI Mood Journal</h3>
+						<p class="feature-card__description" data-i18n="features.f1Text">Interactive diary with NLP.</p>
 					</div>
-
-					<div class="journey-card">
-						<div class="journey-card__number">2</div>
-						<h3 class="journey-card__title">Entiende</h3>
-						<p class="journey-card__text">La IA analiza tus patrones y proporciona insights profundos.</p>
+					<div class="feature-card">
+						<div class="feature-card__icon" aria-hidden="true">
+							<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+								<path d="M4 12h16M12 4v16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+							</svg>
+						</div>
+						<h3 class="feature-card__title" data-i18n="features.f2Title">Dynamic Habit Tracker</h3>
+						<p class="feature-card__description" data-i18n="features.f2Text">Stress-adaptive goals.</p>
 					</div>
-
-					<div class="journey-card">
-						<div class="journey-card__number">3</div>
-						<h3 class="journey-card__title">Crece</h3>
-						<p class="journey-card__text">Utiliza estos conocimientos para mejorar tu bienestar emocional.</p>
+					<div class="feature-card">
+						<div class="feature-card__icon" aria-hidden="true">
+							<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+								<path d="M12 3c-3 4-6 6-6 10a6 6 0 1 0 12 0c0-4-3-6-6-10z" fill="none" stroke="currentColor" stroke-width="2" />
+							</svg>
+						</div>
+						<h3 class="feature-card__title" data-i18n="features.f3Title">Smart Interventions</h3>
+						<p class="feature-card__description" data-i18n="features.f3Text">Breathing and meditation guides.</p>
+					</div>
+					<div class="feature-card">
+						<div class="feature-card__icon" aria-hidden="true">
+							<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+								<rect x="3" y="5" width="18" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2" />
+								<line x1="8" y1="3" x2="8" y2="7" stroke="currentColor" stroke-width="2" />
+								<line x1="16" y1="3" x2="16" y2="7" stroke="currentColor" stroke-width="2" />
+							</svg>
+						</div>
+						<h3 class="feature-card__title" data-i18n="features.f4Title">Basic Analytics</h3>
+						<p class="feature-card__description" data-i18n="features.f4Text">Calendar and word cloud.</p>
+					</div>
+					<div class="feature-card feature-card--premium">
+						<span class="feature-card__badge">Premium</span>
+						<div class="feature-card__icon" aria-hidden="true">
+							<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+								<polyline points="4,16 9,11 13,15 20,8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+							</svg>
+						</div>
+						<h3 class="feature-card__title" data-i18n="features.f5Title">Advanced Analytics</h3>
+						<p class="feature-card__description" data-i18n="features.f5Text">Detailed fluctuation charts.</p>
+					</div>
+					<div class="feature-card feature-card--premium">
+						<span class="feature-card__badge">Premium</span>
+						<div class="feature-card__icon" aria-hidden="true">
+							<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+								<path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="2" />
+								<path d="M4 10h16" fill="none" stroke="currentColor" stroke-width="2" />
+							</svg>
+						</div>
+						<h3 class="feature-card__title" data-i18n="features.f6Title">Priority Support</h3>
+						<p class="feature-card__description" data-i18n="features.f6Text">Fast technical help.</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
-			<section id="analytics" class="analytics" aria-label="Analytics section">
-			<div class="analytics__container">
-				<div class="analytics__header">
-					<h2 class="analytics__title">Explora tus datos a fondo</h2>
-					<p class="analytics__description">
-						Convierte tus emociones en información accionable para tomar mejores decisiones cada semana.
-					</p>
+		<!-- ANALYTICS -->
+		<section id="analytics" class="analytics section-block section-block--blue" aria-label="Analytics section">
+			<div class="section-block__container">
+				<div class="section-block__header section-block__header--center">
+					<h2 class="section-block__title" data-i18n="analytics.title">Turn emotions into decisions</h2>
+					<p class="section-block__description" data-i18n="analytics.description">Weekly mood trends and trigger maps.</p>
 				</div>
-
 				<div class="analytics__panel">
 					<div class="analytics__panel-head">
-						<h3 class="analytics__panel-title">Mood Trends</h3>
-						<span class="analytics__period">Últimos 7 días</span>
+						<h3 class="analytics__panel-title" data-i18n="analytics.panelTitle">Mood Trends</h3>
+						<span class="analytics__period" data-i18n="analytics.period">Last 7 days</span>
 					</div>
-
-					<div class="analytics__chart-wrap" role="img" aria-label="Mood Trends line chart">
+					<div class="analytics__chart-wrap" role="img" aria-label="Mood trends chart">
 						<svg class="analytics__chart" viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
 							<line x1="60" y1="35" x2="60" y2="230" class="axis-line" />
 							<line x1="60" y1="230" x2="590" y2="230" class="axis-line" />
 							<line x1="60" y1="70" x2="590" y2="70" class="grid-line" />
 							<line x1="60" y1="120" x2="590" y2="120" class="grid-line" />
 							<line x1="60" y1="170" x2="590" y2="170" class="grid-line" />
-
-							<polyline
-								points="95,170 170,150 245,175 320,130 395,95 470,115 545,80"
-								class="trend-fill"
-							/>
-							<polyline
-								points="95,170 170,150 245,175 320,130 395,95 470,115 545,80"
-								class="trend-line"
-							/>
-
+							<polyline points="95,170 170,150 245,175 320,130 395,95 470,115 545,80" class="trend-fill" />
+							<polyline points="95,170 170,150 245,175 320,130 395,95 470,115 545,80" class="trend-line" />
 							<circle cx="95" cy="170" r="5" class="trend-point" />
 							<circle cx="170" cy="150" r="5" class="trend-point" />
 							<circle cx="245" cy="175" r="5" class="trend-point" />
@@ -241,77 +366,192 @@
 							<circle cx="470" cy="115" r="5" class="trend-point" />
 							<circle cx="545" cy="80" r="5" class="trend-point" />
 						</svg>
-
-						<div class="analytics__labels">
-							<span>Lun</span>
-							<span>Mar</span>
-							<span>Mié</span>
-							<span>Jue</span>
-							<span>Vie</span>
-							<span>Sáb</span>
-							<span>Dom</span>
+						<div class="analytics__labels" data-i18n-list="analytics.days">
+							<span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section id="cta" class="cta" aria-label="Call to action section">
-			<div class="cta__container">
+		<!-- PRICING -->
+		<section id="pricing" class="pricing section-block section-block--mint" aria-label="Pricing section">
+			<div class="section-block__container">
+				<div class="section-block__header section-block__header--center">
+					<p class="eyebrow" data-i18n="pricing.eyebrow">Pricing</p>
+					<h2 class="section-block__title" data-i18n="pricing.title">Plans that grow with you</h2>
+					<p class="section-block__description" data-i18n="pricing.description">Start free. Upgrade when you need more.</p>
+				</div>
+				<div class="pricing__grid">
+					<article class="pricing-card">
+						<h3 class="pricing-card__name" data-i18n="pricing.freemiumName">Freemium</h3>
+						<p class="pricing-card__price">
+							<span data-i18n="pricing.freemiumPrice">$0</span>
+							<small data-i18n="pricing.freemiumPeriod">/ month</small>
+						</p>
+						<p class="pricing-card__tagline" data-i18n="pricing.freemiumTagline">Start building self-awareness.</p>
+						<ul class="pricing-card__features">
+							<li class="pricing-card__feature pricing-card__feature--included">
+								<span class="pricing-card__icon pricing-card__icon--yes" aria-hidden="true">✓</span>
+								<span><strong data-i18n="pricing.pf1Title">AI Mood Journal</strong> — <span data-i18n="pricing.pf1Text">NLP diary</span></span>
+							</li>
+							<li class="pricing-card__feature pricing-card__feature--included">
+								<span class="pricing-card__icon pricing-card__icon--yes" aria-hidden="true">✓</span>
+								<span><strong data-i18n="pricing.pf2Title">Dynamic Habit Tracker</strong> — <span data-i18n="pricing.pf2Text">Stress-based</span></span>
+							</li>
+							<li class="pricing-card__feature pricing-card__feature--included">
+								<span class="pricing-card__icon pricing-card__icon--yes" aria-hidden="true">✓</span>
+								<span><strong data-i18n="pricing.pf3Title">Smart Interventions</strong> — <span data-i18n="pricing.pf3Text">Guides</span></span>
+							</li>
+							<li class="pricing-card__feature pricing-card__feature--included">
+								<span class="pricing-card__icon pricing-card__icon--yes" aria-hidden="true">✓</span>
+								<span><strong data-i18n="pricing.pf4Title">Basic Analytics</strong> — <span data-i18n="pricing.pf4Text">Calendar</span></span>
+							</li>
+							<li class="pricing-card__feature pricing-card__feature--excluded">
+								<span class="pricing-card__icon pricing-card__icon--no" aria-hidden="true">✕</span>
+								<span data-i18n="pricing.px1">PDF report export</span>
+							</li>
+							<li class="pricing-card__feature pricing-card__feature--excluded">
+								<span class="pricing-card__icon pricing-card__icon--no" aria-hidden="true">✕</span>
+								<span data-i18n="pricing.px2">CSV data export</span>
+							</li>
+						</ul>
+						<button type="button" class="pricing-card__btn pricing-card__btn--muted" disabled data-i18n="pricing.freemiumCta">Your current plan</button>
+					</article>
+
+					<article class="pricing-card pricing-card--featured">
+						<span class="pricing-card__badge" data-i18n="pricing.recommended">Recommended</span>
+						<h3 class="pricing-card__name pricing-card__name--accent" data-i18n="pricing.premiumName">MindFlow Premium</h3>
+						<p class="pricing-card__price">
+							<span data-i18n="pricing.premiumPrice">$4.99</span>
+							<small data-i18n="pricing.premiumPeriod">/ month</small>
+						</p>
+						<p class="pricing-card__tagline" data-i18n="pricing.premiumTagline">Deep analysis and professional reports.</p>
+						<ul class="pricing-card__features">
+							<li class="pricing-card__feature pricing-card__feature--included">
+								<span class="pricing-card__icon pricing-card__icon--yes" aria-hidden="true">✓</span>
+								<span><strong data-i18n="pricing.pp1Title">Everything in Freemium</strong> — <span data-i18n="pricing.pp1Text">All free features</span></span>
+							</li>
+							<li class="pricing-card__feature pricing-card__feature--included">
+								<span class="pricing-card__icon pricing-card__icon--yes" aria-hidden="true">✓</span>
+								<span><strong data-i18n="pricing.pp2Title">PDF Export</strong> — <span data-i18n="pricing.pp2Text">Clinical histories</span></span>
+							</li>
+							<li class="pricing-card__feature pricing-card__feature--included">
+								<span class="pricing-card__icon pricing-card__icon--yes" aria-hidden="true">✓</span>
+								<span><strong data-i18n="pricing.pp3Title">CSV Export</strong> — <span data-i18n="pricing.pp3Text">Raw data</span></span>
+							</li>
+							<li class="pricing-card__feature pricing-card__feature--included">
+								<span class="pricing-card__icon pricing-card__icon--yes" aria-hidden="true">✓</span>
+								<span><strong data-i18n="pricing.pp4Title">Advanced Analytics</strong> — <span data-i18n="pricing.pp4Text">Fluctuation charts</span></span>
+							</li>
+							<li class="pricing-card__feature pricing-card__feature--included">
+								<span class="pricing-card__icon pricing-card__icon--yes" aria-hidden="true">✓</span>
+								<span><strong data-i18n="pricing.pp5Title">Priority Support</strong> — <span data-i18n="pricing.pp5Text">Fast help</span></span>
+							</li>
+						</ul>
+						<a href="#" class="pricing-card__btn pricing-card__btn--gradient" data-i18n="pricing.premiumCta">Upgrade to Premium</a>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- TEAM -->
+		<section id="team" class="team section-block section-block--white" aria-label="Team section">
+			<div class="section-block__container">
+				<div class="section-block__header section-block__header--center">
+					<p class="eyebrow" data-i18n="team.eyebrow">Our team</p>
+					<h2 class="section-block__title" data-i18n="team.title">Built by people who care about mental wellness</h2>
+					<p class="section-block__description" data-i18n="team.description">Multidisciplinary team.</p>
+				</div>
+				<div class="team__grid">
+					<article class="team-card">
+						<img src="assets/images/team/cabrera-camila.png" alt="" class="team-card__photo" data-team-fallback="CC" />
+						<h3 data-i18n="team.member1Name">Camila Cabrera</h3>
+						<p data-i18n="team.member1Role">Product &amp; UX</p>
+					</article>
+					<article class="team-card">
+						<img src="assets/images/team/caisahuana-becker.png" alt="" class="team-card__photo" data-team-fallback="BC" />
+						<h3 data-i18n="team.member2Name">Becker Caisahuana</h3>
+						<p data-i18n="team.member2Role">Backend Engineering</p>
+					</article>
+					<article class="team-card">
+						<img src="assets/images/team/diaz-sebastian.png" alt="" class="team-card__photo" data-team-fallback="SD" />
+						<h3 data-i18n="team.member3Name">Sebastian Diaz</h3>
+						<p data-i18n="team.member3Role">AI &amp; Data</p>
+					</article>
+					<article class="team-card">
+						<img src="assets/images/team/jauregui-jean.png" alt="" class="team-card__photo" data-team-fallback="JJ" />
+						<h3 data-i18n="team.member4Name">Jean Jauregui</h3>
+						<p data-i18n="team.member4Role">Frontend Engineering</p>
+					</article>
+					<article class="team-card">
+						<img src="assets/images/team/rocca-angel.png" alt="" class="team-card__photo" data-team-fallback="AR" />
+						<h3 data-i18n="team.member5Name">Angel Rocca</h3>
+						<p data-i18n="team.member5Role">Quality &amp; DevOps</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA -->
+		<section id="cta" class="cta section-block section-block--blue" aria-label="Call to action section">
+			<div class="section-block__container">
 				<div class="cta__box">
-					<h2 class="cta__title">¿Listo para encontrar tu centro?</h2>
-					<p class="cta__text">
-						Empieza hoy tu camino hacia un mayor bienestar emocional con MindFlow.
-					</p>
-					<a href="#" class="cta__button">Comenzar con MindFlow</a>
+					<h2 class="cta__title" data-i18n="cta.title">Ready to understand your emotions?</h2>
+					<p class="cta__text" data-i18n="cta.text">Join students and professionals using MindFlow.</p>
+					<a href="#" class="cta__button" data-app-link data-i18n="cta.button">Get started free</a>
 				</div>
 			</div>
 		</section>
 	</main>
 
-		<footer class="site-footer" aria-label="Footer">
+	<footer class="site-footer" aria-label="Footer">
 		<div class="footer__container">
 			<div class="footer__brand">
-				<a href="#" class="footer__logo" aria-label="MindFlow home">
+				<a href="#hero" class="footer__logo" aria-label="MindFlow home">
 					<img src="assets/images/MindFlow_logo.png" alt="" class="logo-image" />
 					<span class="logo-text">MindFlow</span>
 				</a>
-				<p class="footer__description">
-					MindFlow te acompaña para entender tus emociones, cuidar tu bienestar y crecer con claridad.
-				</p>
+				<p class="footer__description" data-i18n="footer.description">MindFlow helps you understand emotions.</p>
 			</div>
 
 			<div class="footer__columns">
 				<div class="footer__column">
-					<h3 class="footer__title">Product</h3>
+					<h3 class="footer__title" data-i18n="footer.product">Product</h3>
 					<ul class="footer__list">
-						<li><a href="#features">Características</a></li>
-						<li><a href="#journey">Cómo funciona</a></li>
-						<li><a href="#analytics">Análisis</a></li>
-						<li><a href="#cta">Planes</a></li>
+						<li><a href="#features" data-i18n="nav.features">Features</a></li>
+						<li><a href="#how-it-works" data-i18n="nav.howItWorks">How it works</a></li>
+						<li><a href="#pricing" data-i18n="footer.plans">Plans</a></li>
+						<li><a href="#product-video" data-i18n="footer.aboutProduct">Product demo</a></li>
+						<li><a href="#analytics" data-i18n="analytics.title">Analytics</a></li>
 					</ul>
 				</div>
 
 				<div class="footer__column">
-					<h3 class="footer__title">Company</h3>
+					<h3 class="footer__title" data-i18n="footer.company">Company</h3>
 					<ul class="footer__list">
-						<li><a href="#">Sobre nosotros</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Carreras</a></li>
-						<li><a href="#">Contacto</a></li>
+						<li><a href="#team" data-i18n="footer.aboutUs">About us</a></li>
+						<li><a href="#team" data-i18n="footer.team">Team</a></li>
+						<li>
+							<a href="mailto:support@mindflow.app" data-i18n="footer.contact">Contact</a>
+							<span class="footer__email" data-i18n="footer.contactEmail">support@mindflow.app</span>
+						</li>
 					</ul>
 				</div>
 
 				<div class="footer__column">
-					<h3 class="footer__title">Legal</h3>
+					<h3 class="footer__title" data-i18n="footer.legal">Legal</h3>
 					<ul class="footer__list">
-						<li><a href="#">Privacidad</a></li>
-						<li><a href="#">Términos</a></li>
-						<li><a href="#">Cookies</a></li>
-						<li><a href="#">Seguridad</a></li>
+						<li><a href="legal/privacy.html" data-i18n="footer.privacy">Privacy Policy</a></li>
+						<li><a href="legal/terms.html" data-i18n="footer.terms">Terms of Service</a></li>
+						<li><a href="legal/cookies.html" data-i18n="footer.cookies">Cookie Policy</a></li>
+						<li><a href="mailto:support@mindflow.app" data-i18n="footer.security">Security</a></li>
 					</ul>
 				</div>
 			</div>
+		</div>
+		<div class="footer__bottom">
+			<p data-i18n="footer.copyright" data-i18n-vars='{"year":2026}'>© 2026 MindFlow. All rights reserved.</p>
 		</div>
 	</footer>
 
