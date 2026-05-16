@@ -2,7 +2,7 @@
 
 const DEFAULT_LOCALE = "en";
 const SUPPORTED_LOCALES = ["en", "es"];
-const APP_URL = "https://mindflow-frontend-cognitech-mindflow.vercel.app/;
+const APP_URL = "https://mindflow-frontend-cognitech-mindflow.vercel.app/";
 let currentLocale = DEFAULT_LOCALE;
 let translations = {};
 
