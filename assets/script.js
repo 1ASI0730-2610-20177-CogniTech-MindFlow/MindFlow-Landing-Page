@@ -26,6 +26,8 @@ function getI18nBasePath() {
 }
 
 async function initI18n() {
+      console.log(window.location.pathname);
+    console.log(getI18nBasePath());
     const stored = localStorage.getItem("mindflow-locale");
     currentLocale = SUPPORTED_LOCALES.includes(stored) ? stored : DEFAULT_LOCALE;
     await loadAndApplyLocale(currentLocale);
