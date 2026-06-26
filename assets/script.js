@@ -20,7 +20,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function getI18nBasePath() {
-    return window.location.pathname.includes("/legal/") ? "../assets/i18n/" : "assets/i18n/";
+    console.log(window.location.pathname);
+
+    return window.location.pathname.includes("/legal/")
+        ? "../assets/i18n/"
+        : "assets/i18n/";
 }
 
 async function initI18n() {
