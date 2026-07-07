@@ -3,7 +3,9 @@
 Landing page oficial de **MindFlow**, un diario de estado de ánimo con IA pensado para estudiantes y jóvenes profesionales. Ayuda a detectar patrones de estrés, sugerir intervenciones (respiración/meditación) y exportar reportes para uso clínico.
 
 **Demo en vivo:** https://1asi0730-2610-20177-cognitech-mindflow.github.io/MindFlow-Landing-Page/
-**App:** https://mindflow-frontend-cognitech-mindflow.vercel.app/
+**App:** https://mindflow-frontend-ten.vercel.app/login/
+**Correo:** demo.completo2026@mindflow.com
+**Contraseña:** Demo1234!
 
 ## Stack
 
