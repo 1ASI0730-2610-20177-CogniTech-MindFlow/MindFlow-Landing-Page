@@ -1462,7 +1462,23 @@ main {
 	gap: 2.5rem;
 	align-items: center;
 }
+.product-video__videos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
+.product-video__frame {
+    flex: 1;
+    min-width: 320px;
+}
+
+.product-video__frame iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: 12px;
+}
 .product-video__bullets {
 	list-style: none;
 	margin: 1.25rem 0;
